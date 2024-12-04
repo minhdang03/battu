@@ -18,7 +18,7 @@ export default function Home() {
           </h1>
           
           <p className="text-xl text-gray-300 max-w-2xl mx-auto text-center shadow-md hover:text-gray-100 transition-colors duration-300">
-          Xây dựng một thế giới nơi tình yêu thương là trung tâm, không phân biệt tôn giáo, sắc tộc hoặc ngôn ngữ, tạo nên một tương lai không chiến tranh, nơi mọi người cùng nhau tạo nên một "Thiên Đàng Trên Trái Đất".
+          Xây dựng một thế giới nơi tình yêu thương là trung tâm, không phân biệt tôn giáo, sắc tộc hoặc ngôn ngữ, tạo nên một tương lai không chiến tranh, nơi mọi người cùng nhau tạo nên một &quot;Thiên Đàng Trên Trái Đất&quot;.
           </p>
         </div>
           

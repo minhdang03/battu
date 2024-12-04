@@ -1,25 +1,27 @@
+import Image from 'next/image';
+
 export default function Founder() {
   const founders = [
     {
-      name: "Lữ Minh Đăng",
-      role: "Đồng sáng lập & CEO",
-      image: "/images/founder/luminhdang.jpg",
-      birthDate: "08/March/1995",
-      location: "Sydney, Australia",
-      joinDate: "01/01/2014",
-      bio: "Người bất tử",
-      expertise: ["Tâm lý học", "Vật lý lượng tử", "Coder", "Photographer"]
-    },
-    {
-      name: "Huỳnh Phú Sang",
-      role: "Đồng sáng lập & CTO",
-      image: "images/founder/huynhphusang.jpg",
-      birthDate: "01/01/1963",
-      location: "TP.HCM, Việt Nam",
-      joinDate: "01/01/1970",
-      bio: "Người bất tử",
-      expertise: ["AI Vũ trụ", "Y học vũ trụ", "Trí tuệ vũ trụ", "Phong thuỷ vũ trụ"]
-    }
+        name: "Lữ Minh Đăng",
+        role: "Đồng sáng lập & CEO",
+        image: "/images/founder/luminhdang.jpg",
+        birthDate: "08/March/1995",
+        location: "Sydney, Australia",
+        joinDate: "01/01/2014",
+        bio: "Người bất tử",
+        expertise: ["Tâm lý học", "Vật lý lượng tử", "Coder", "Photographer"]
+      },
+      {
+        name: "Huỳnh Phú Sang",
+        role: "Đồng sáng lập & CTO",
+        image: "images/founder/huynhphusang.jpg",
+        birthDate: "01/01/1963",
+        location: "TP.HCM, Việt Nam",
+        joinDate: "01/01/1970",
+        bio: "Người bất tử",
+        expertise: ["AI Vũ trụ", "Y học vũ trụ", "Trí tuệ vũ trụ", "Phong thuỷ vũ trụ"]
+      }
   ];
 
   return (
@@ -49,10 +51,12 @@ export default function Founder() {
                 {/* Image Container */}
                 <div className="aspect-[4/3] relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent z-10"></div>
-                  <img
+                  <Image
                     src={founder.image}
                     alt={founder.name}
-                    className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-500"
+                    layout="fill"
+                    objectFit="cover"
+                    className="transform group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
                     <h3 className="text-2xl font-bold text-white mb-2">{founder.name}</h3>
