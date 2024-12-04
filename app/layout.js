@@ -12,6 +12,10 @@ const roboto = Roboto_Flex({
 export const metadata = {
   title: "SỐNG THỌ NGÀN NĂM - immortality",
   description: "Humans have always harbored a profound desire for a life of health, happiness, and prosperity. The ultimate goal is to achieve a state of well-being, free from the threats of illness, genetic disorders, and unforeseen calamities in life. Attaining such a life would not only ensure longevity but also provide protection against unexpected events such as accidents or diseases like cancer. If humanity could realize this ideal, it would pave the way for a future where the fear of death and suffering would be significantly alleviated.",
+  image: "/images/og/battu.jpg",
+  url: "https://bat-tu.vercel.app",
+  type: "website",
+  robots: "follow, index",
 };
 
 
