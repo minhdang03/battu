@@ -1,6 +1,6 @@
 export default function SolarSystem() {
   return (
-    <div className="relative w-64 h-64 sm:w-80 sm:h-80 mx-auto mb-6 sm:mb-8 group">
+    <div className="relative w-64 h-64 sm:w-80 sm:h-80 mx-auto mb-6 sm:mb-8 group z-20 mt-16">
       {/* Sao Thủy */}
       <div className="absolute w-2 sm:w-3 h-2 sm:h-3 rounded-full bg-gray-400/70 
         animate-[orbit1_8s_linear_infinite]" 

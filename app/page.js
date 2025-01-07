@@ -1,14 +1,12 @@
 'use client';
 import { useState, useEffect } from "react";
-import SolarSystem from './components/SolarSystem';
+import SolarSystem from './components/Universe/SolarSystem';
 import Founder from './components/Founder';
 export default function Home() {
 
   return (
     <div className="min-h-[80vh] flex flex-col items-center justify-center relative bg-transparent">
-      {/* Stars Background */}
-
-      <div className="w-full max-w-4xl p-8 relative z-10">
+      <div className="w-full max-w-4xl p-8 relative z-20">
         {/* Logo và Heading */}
         <div className="text-center mb-16 space-y-6">
           <SolarSystem />
