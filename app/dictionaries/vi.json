@@ -1,0 +1,42 @@
+{
+  "navigation": {
+    "home": "Trang chủ",
+    "about": "Giới thiệu",
+    "practice": "Thực hành",
+    "research": "Nghiên cứu",
+    "theory": "Lý thuyết",
+    "founder": "Đội Ngũ"
+  },
+  "home": {
+    "title": "SỐNG THỌ NGÀN NĂM",
+    "subtitle": "CÔNG THỨC SỐNG THỌ NGÀN NĂM",
+    "description": "Xây dựng một thế giới nơi tình yêu thương là trung tâm, không phân biệt tôn giáo, sắc tộc hoặc ngôn ngữ, tạo nên một tương lai không chiến tranh, nơi mọi người cùng nhau tạo nên một \"Thiên Đàng Trên Trái Đất\".",
+    "under_construction": "WEBSITE ĐANG XÂY DỰNG"
+  },
+  "metadata": {
+    "title": "SỐNG THỌ NGÀN NĂM - immortality",
+    "description": "Con người luôn khao khát một cuộc sống khỏe mạnh, hạnh phúc và thịnh vượng..."
+  },
+  "about": {
+    "title": "Giới Thiệu Về Nhóm Chúng Tôi",
+    "description": "Dù không có cơ hội học đại học chính quy...",
+    "mission": "Sứ mệnh của chúng tôi...",
+    "vision": "Tầm nhìn của chúng tôi..."
+  },
+  "founder": {
+    "title": "Đội Ngũ Sáng Lập",
+    "description": "Những người tiên phong trong hành trình khám phá bí mật của sự bất tử",
+    "bio": "Người bất tử",
+    "birthDate": "Ngày sinh",
+    "location": "Địa điểm",
+    "expertise": "Chuyên môn",
+    "roles": {
+      "ceo": "Đồng sáng lập & CEO",
+      "cto": "Đồng sáng lập & CTO"
+    }
+  },
+  "questions": {
+    "title": "Câu Hỏi Thường Gặp",
+    "description": "Những câu hỏi phổ biến về phương pháp sống thọ"
+  }
+} 

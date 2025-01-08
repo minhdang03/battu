@@ -1,0 +1,42 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "practice": "Practice",
+    "research": "Research",
+    "theory": "Theory",
+    "founder": "Team"
+  },
+  "home": {
+    "title": "LIVE A THOUSAND YEARS",
+    "subtitle": "FORMULA FOR LIVING A THOUSAND YEARS",
+    "description": "Building a world where love is central, regardless of religion, ethnicity or language, creating a future without war, where people together create a \"Heaven on Earth\".",
+    "under_construction": "WEBSITE UNDER CONSTRUCTION"
+  },
+  "metadata": {
+    "title": "LIVE A THOUSAND YEARS - immortality",
+    "description": "Humans have always harbored a profound desire for a life of health, happiness, and prosperity..."
+  },
+  "about": {
+    "title": "About Our Team",
+    "description": "Although we didn't have the opportunity...",
+    "mission": "Our mission is...",
+    "vision": "Our vision is..."
+  },
+  "founder": {
+    "title": "Founding Team",
+    "description": "Pioneers in the journey to discover the secrets of immortality",
+    "bio": "Immortal",
+    "birthDate": "Birth Date",
+    "location": "Location",
+    "expertise": "Expertise",
+    "roles": {
+      "ceo": "Co-founder & CEO",
+      "cto": "Co-founder & CTO"
+    }
+  },
+  "questions": {
+    "title": "Frequently Asked Questions",
+    "description": "Common questions about longevity methods"
+  }
+} 
