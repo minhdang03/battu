@@ -9,7 +9,21 @@ const nextConfig = {
           hostname: '**',
         },
       ],
-    }
+    },
+    webpack: (config, { isServer }) => {
+      // Tắt các cảnh báo về managed items
+      config.infrastructureLogging = {
+        level: 'error',
+      };
+
+      // Tắt các cảnh báo về các module không tồn tại
+      config.ignoreWarnings = [
+        { module: /sharp/ },
+        { module: /@next\/swc/ },
+      ];
+
+      return config;
+    },
   }
   
   module.exports = nextConfig

@@ -5,38 +5,74 @@
     "practice": "Thực hành",
     "research": "Nghiên cứu",
     "theory": "Lý thuyết",
-    "founder": "Đội Ngũ"
+    "founder": "Đội Ngũ",
+    "questions": "Câu hỏi thường gặp",
+    "questionsDescription": "Các câu hỏi thường gặp về y học vũ trụ"
   },
   "home": {
-    "title": "SỐNG THỌ NGÀN NĂM",
-    "subtitle": "CÔNG THỨC SỐNG THỌ NGÀN NĂM",
+    "title": "SÓNG THỌ NGÀN NĂM",
+    "subtitle": "CÔNG THỨC SÓNG THỌ NGÀN NĂM",
     "description": "Xây dựng một thế giới nơi tình yêu thương là trung tâm, không phân biệt tôn giáo, sắc tộc hoặc ngôn ngữ, tạo nên một tương lai không chiến tranh, nơi mọi người cùng nhau tạo nên một \"Thiên Đàng Trên Trái Đất\".",
     "under_construction": "WEBSITE ĐANG XÂY DỰNG"
   },
   "metadata": {
-    "title": "SỐNG THỌ NGÀN NĂM - immortality",
+    "title": "SÓNG THỌ NGÀN NĂM - immortality",
     "description": "Con người luôn khao khát một cuộc sống khỏe mạnh, hạnh phúc và thịnh vượng..."
   },
   "about": {
     "title": "Giới Thiệu Về Nhóm Chúng Tôi",
-    "description": "Dù không có cơ hội học đại học chính quy...",
-    "mission": "Sứ mệnh của chúng tôi...",
-    "vision": "Tầm nhìn của chúng tôi..."
+    "description": "Dù không có cơ hội học đại học chính quy, nhưng với niềm đam mê và sự tận tâm, chúng tôi đã tìm ra con đường khám phá độc đáo của riêng mình.",
+    "mission": "Sứ mệnh của chúng tôi là khám phá bí mật của sự trường thọ và chia sẻ kiến thức này với nhân loại.",
+    "vision": "Tầm nhìn của chúng tôi là tạo ra một thế giới nơi mọi người có thể sống một cuộc sống khỏe mạnh, trọn vẹn trong hàng ngàn năm."
   },
   "founder": {
     "title": "Đội Ngũ Sáng Lập",
     "description": "Những người tiên phong trong hành trình khám phá bí mật của sự bất tử",
-    "bio": "Người bất tử",
-    "birthDate": "Ngày sinh",
-    "location": "Địa điểm",
-    "expertise": "Chuyên môn",
-    "roles": {
-      "ceo": "Đồng sáng lập & CEO",
-      "cto": "Đồng sáng lập & CTO"
-    }
+    "members": [
+      {
+        "name": "Đặng Văn Hùng",
+        "role": "Đồng sáng lập & CEO",
+        "bio": "Người bất tử",
+        "birthDate": "13/05/1990",
+        "location": "Sydney, Australia",
+        "expertise": "Y học vũ trụ"
+      },
+      {
+        "name": "Nguyễn Văn A",
+        "role": "Đồng sáng lập & CTO",
+        "bio": "Chuyên gia công nghệ",
+        "birthDate": "01/01/1992",
+        "location": "Hà Nội, Việt Nam",
+        "expertise": "Trí tuệ nhân tạo"
+      }
+    ]
   },
   "questions": {
     "title": "Câu Hỏi Thường Gặp",
     "description": "Những câu hỏi phổ biến về phương pháp sống thọ"
+  },
+  "common": {
+    "readMore": "Đọc thêm",
+    "learnMore": "Tìm hiểu thêm",
+    "viewAll": "Xem tất cả",
+    "contact": "Liên hệ",
+    "email": "Email",
+    "phone": "Điện thoại",
+    "address": "Địa chỉ"
+  },
+  "footer": {
+    "description": "Người bất tử sẵn sàng chia sẻ công thức cho loài người (thích sống thọ) hơn loài rùa 200 năm tuổi.",
+    "explore": "Khám Phá",
+    "connect": "Kết Nối",
+    "contact": {
+      "email": "mr.dang1305@gmail.com",
+      "address": "Sydney, Australia"
+    },
+    "social": {
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram"
+    },
+    "copyright": "© 2024 IMMORTALITY - SỐNG THỌ NGÀN NĂM. All rights reserved."
   }
 } 

@@ -1,7 +1,10 @@
- 'use client';
+'use client';
 import Link from 'next/link';
+import { getTranslationsSync } from '../../../config/i18n';
 
 export default function Footer({ lang }) {
+  const dict = getTranslationsSync(lang);
+
   return (
     <footer className="bg-white border-t border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -14,27 +17,27 @@ export default function Footer({ lang }) {
               </h3>
             </Link>
             <p className="text-gray-600">
-              Người bất tử sẵn sàng chia sẻ công thức cho loài người (thích sống thọ) hơn loài rùa 200 năm tuổi.
+              {dict.footer.description}
             </p>
           </div>
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-gray-900">Khám Phá</h4>
+            <h4 className="text-lg font-semibold text-gray-900">{dict.footer.explore}</h4>
             <ul className="space-y-2">
               <li>
                 <Link href={`/${lang}/ly-thuyet`} className="text-gray-600 hover:text-gray-900 transition-colors">
-                  Lý Thuyết
+                  {dict.navigation.theory}
                 </Link>
               </li>
               <li>
                 <Link href={`/${lang}/thuc-hanh`} className="text-gray-600 hover:text-gray-900 transition-colors">
-                  Thực Hành
+                  {dict.navigation.practice}
                 </Link>
               </li>
               <li>
                 <Link href={`/${lang}/nghien-cuu`} className="text-gray-600 hover:text-gray-900 transition-colors">
-                  Nghiên Cứu
+                  {dict.navigation.research}
                 </Link>
               </li>
             </ul>
@@ -42,7 +45,7 @@ export default function Footer({ lang }) {
 
           {/* Contact & Social */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-gray-900">Kết Nối</h4>
+            <h4 className="text-lg font-semibold text-gray-900">{dict.footer.connect}</h4>
             <div className="flex space-x-4">
               {/* Social Icons */}
               <a 
@@ -68,7 +71,7 @@ export default function Footer({ lang }) {
             </div>
             <div className="space-y-2">
               <p className="text-gray-600">Email: mr.dang1305@gmail.com</p>
-              <p className="text-gray-600">Địa chỉ: Sydney, Australia</p>
+              <p className="text-gray-600">{dict.footer.address}</p>
             </div>
           </div>
         </div>
@@ -76,7 +79,7 @@ export default function Footer({ lang }) {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-gray-100">
           <p className="text-sm text-gray-600 text-center">
-            © 2024 IMMORTALITY - SỐNG THỌ NGÀN NĂM. All rights reserved.
+            {dict.footer.copyright}
           </p>
         </div>
       </div>

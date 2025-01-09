@@ -7,39 +7,14 @@ export const getTranslations = async (locale) => {
 }
 
 // Sync version for client components
-const dictionaries = {
-  en: {
-    navigation: {
-      home: "Home",
-      about: "About",
-      practice: "Practice",
-      research: "Research",
-      theory: "Theory"
-    },
-    home: {
-      title: "LIVE A THOUSAND YEARS",
-      subtitle: "FORMULA FOR LIVING A THOUSAND YEARS",
-      description: "Building a world where love is central...",
-      under_construction: "WEBSITE UNDER CONSTRUCTION"
-    }
-  },
-  vi: {
-    navigation: {
-      home: "Trang chủ",
-      about: "Giới thiệu",
-      practice: "Thực hành",
-      research: "Nghiên cứu",
-      theory: "Lý thuyết"
-    },
-    home: {
-      title: "SỐNG THỌ NGÀN NĂM",
-      subtitle: "CÔNG THỨC SỐNG THỌ NGÀN NĂM",
-      description: "Xây dựng một thế giới nơi tình yêu thương là trung tâm...",
-      under_construction: "WEBSITE ĐANG XÂY DỰNG"
-    }
+export function getTranslationsSync(locale) {
+  try {
+    // Sử dụng require để load file JSON một cách đồng bộ
+    const dict = require(`../dictionaries/${locale}.json`)
+    return dict
+  } catch (error) {
+    // Fallback to vi if translation not found
+    const viDict = require(`../dictionaries/vi.json`)
+    return viDict
   }
-}
-
-export const getTranslationsSync = (locale) => {
-  return dictionaries[locale] || dictionaries.vi
 } 

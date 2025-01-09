@@ -16,8 +16,8 @@ export async function generateStaticParams() {
   return locales.map((locale) => ({ lang: locale }))
 }
 
-export async function generateMetadata({ searchParams }) {
-  const lang = searchParams?.lang || 'vi'
+export async function generateMetadata({ params }) {
+  const lang = params?.lang || 'vi'
   const dict = await getTranslations(lang)
   
   return {
@@ -30,8 +30,8 @@ export async function generateMetadata({ searchParams }) {
   }
 }
 
-export default async function RootLayout({ children, searchParams }) {
-  const lang = searchParams?.lang || 'vi'
+export default async function RootLayout({ children, params }) {
+  const lang = params?.lang || 'vi'
   const dict = await getTranslations(lang)
   
   return (

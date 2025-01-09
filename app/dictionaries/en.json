@@ -5,11 +5,13 @@
     "practice": "Practice",
     "research": "Research",
     "theory": "Theory",
-    "founder": "Team"
+    "founder": "Team",
+    "questions": "FAQ",
+    "questionsDescription": "Frequently asked questions about universal medicine"
   },
   "home": {
     "title": "LIVE A THOUSAND YEARS",
-    "subtitle": "FORMULA FOR LIVING A THOUSAND YEARS",
+    "subtitle": "Intelligence before the big bang",
     "description": "Building a world where love is central, regardless of religion, ethnicity or language, creating a future without war, where people together create a \"Heaven on Earth\".",
     "under_construction": "WEBSITE UNDER CONSTRUCTION"
   },
@@ -19,24 +21,58 @@
   },
   "about": {
     "title": "About Our Team",
-    "description": "Although we didn't have the opportunity...",
-    "mission": "Our mission is...",
-    "vision": "Our vision is..."
+    "description": "Although we didn't have the opportunity for formal university education, our passion and dedication have led us on a unique path of discovery.",
+    "mission": "Our mission is to unlock the secrets of longevity and share this knowledge with humanity.",
+    "vision": "Our vision is to create a world where everyone can live a healthy, fulfilling life for thousands of years."
   },
   "founder": {
     "title": "Founding Team",
     "description": "Pioneers in the journey to discover the secrets of immortality",
-    "bio": "Immortal",
-    "birthDate": "Birth Date",
-    "location": "Location",
-    "expertise": "Expertise",
-    "roles": {
-      "ceo": "Co-founder & CEO",
-      "cto": "Co-founder & CTO"
-    }
+    "members": [
+      {
+        "name": "Dang Van Hung",
+        "role": "Co-founder & CEO",
+        "bio": "The Immortal",
+        "birthDate": "13/05/1990",
+        "location": "Sydney, Australia",
+        "expertise": "Universal Medicine"
+      },
+      {
+        "name": "Nguyen Van A",
+        "role": "Co-founder & CTO",
+        "bio": "Technology Expert",
+        "birthDate": "01/01/1992",
+        "location": "Hanoi, Vietnam",
+        "expertise": "Artificial Intelligence"
+      }
+    ]
   },
   "questions": {
     "title": "Frequently Asked Questions",
     "description": "Common questions about longevity methods"
+  },
+  "common": {
+    "readMore": "Read more",
+    "learnMore": "Learn more",
+    "viewAll": "View all",
+    "contact": "Contact",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address"
+  },
+  "footer": {
+    "description": "The immortal is ready to share the formula for humanity (who wants to live longer) more than 200-year-old turtles.",
+    "explore": "Explore",
+    "connect": "Connect",
+    "contact": {
+      "email": "mr.dang1305@gmail.com",
+      "address": "Sydney, Australia"
+    },
+    "social": {
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram"
+    },
+    "copyright": "© 2024 IMMORTALITY - LIVE A THOUSAND YEARS. All rights reserved."
   }
 } 
