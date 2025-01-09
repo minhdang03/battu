@@ -1,5 +1,3 @@
-'use client';
-
 const questionCategories = {
   title: "Câu Hỏi Thường Gặp",
   description: "Những câu hỏi phổ biến về phương pháp sống thọ",
@@ -9,11 +7,21 @@ const questionCategories = {
       title: "Sức Khỏe",
       description: "Các câu hỏi về sức khỏe và phương pháp điều trị",
       questions: [
-        "Làm thế nào để tăng cường hệ miễn dịch?",
-        "Phương pháp này có thể chữa được ung thư không?",
-        "Tại sao ánh sáng mặt trời lại quan trọng với sức khỏe?",
-        "Chế độ ăn uống ảnh hưởng như thế nào đến tuổi thọ?",
-        "Làm sao để duy trì sức khỏe tối ưu?"
+        {
+          id: "tang-cuong-mien-dich",
+          title: "Làm thế nào để tăng cường hệ miễn dịch?",
+          answer: "Để tăng cường hệ miễn dịch, bạn cần kết hợp nhiều yếu tố: chế độ ăn uống lành mạnh, tập thể dục đều đặn, ngủ đủ giấc, và giảm stress."
+        },
+        {
+          id: "chua-ung-thu",
+          title: "Phương pháp này có thể chữa được ung thư không?",
+          answer: "Phương pháp này không phải là phương pháp chữa trị ung thư trực tiếp, nhưng có thể hỗ trợ cơ thể phòng ngừa và tăng cường sức đề kháng."
+        },
+        {
+          id: "anh-sang-mat-troi",
+          title: "Tại sao ánh sáng mặt trời lại quan trọng với sức khỏe?",
+          answer: "Ánh sáng mặt trời giúp cơ thể sản xuất vitamin D, cải thiện tâm trạng, điều hòa nhịp sinh học và tăng cường hệ miễn dịch."
+        }
       ]
     },
     {
@@ -21,11 +29,16 @@ const questionCategories = {
       title: "Tinh Thần",
       description: "Các vấn đề về tâm lý và tinh thần",
       questions: [
-        "Làm sao để giảm stress và lo âu?",
-        "Thiền có vai trò gì trong việc kéo dài tuổi thọ?",
-        "Làm thế nào để duy trì sự tích cực?",
-        "Tại sao niềm vui lại quan trọng với sức khỏe?",
-        "Làm sao để cân bằng cuộc sống?"
+        {
+          id: "giam-stress",
+          title: "Làm sao để giảm stress và lo âu?",
+          answer: "Thiền định, yoga, tập thể dục, và duy trì lối sống cân bằng là những phương pháp hiệu quả để giảm stress và lo âu."
+        },
+        {
+          id: "thien-dinh",
+          title: "Thiền có vai trò gì trong việc kéo dài tuổi thọ?",
+          answer: "Thiền giúp giảm stress, cải thiện chất lượng giấc ngủ, tăng cường hệ miễn dịch và làm chậm quá trình lão hóa."
+        }
       ]
     },
     {
@@ -33,11 +46,16 @@ const questionCategories = {
       title: "Môi Trường",
       description: "Tác động của môi trường đến tuổi thọ",
       questions: [
-        "Môi trường sống ảnh hưởng thế nào đến tuổi thọ?",
-        "Làm sao để giảm thiểu tác động của ô nhiễm?",
-        "Nên chọn nơi sinh sống như thế nào?",
-        "Ánh sáng tự nhiên có vai trò gì?",
-        "Không khí sạch quan trọng như thế nào?"
+        {
+          id: "tac-dong-moi-truong",
+          title: "Môi trường sống ảnh hưởng thế nào đến tuổi thọ?",
+          answer: "Môi trường sống ảnh hưởng trực tiếp đến sức khỏe và tuổi thọ thông qua chất lượng không khí, nước, và các yếu tố môi trường khác."
+        },
+        {
+          id: "giam-o-nhiem",
+          title: "Làm sao để giảm thiểu tác động của ô nhiễm?",
+          answer: "Sử dụng máy lọc không khí, uống nước sạch, và tránh các khu vực ô nhiễm là những cách hiệu quả để giảm thiểu tác động của ô nhiễm."
+        }
       ]
     }
   ]

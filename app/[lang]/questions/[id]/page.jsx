@@ -1,29 +1,27 @@
 'use client';
 
-import { useState } from 'react';
-import questionCategories from '../../components/data/questions';
-import QuestionList from '../../components/Questions/QuestionList';
+import { getTranslationsSync } from '../../../config/i18n'
+import questionCategories from '../../components/data/questions'
 
-export default function CategoryPage({ params }) {
-  const [category] = useState(() => 
-    questionCategories.categories.find(cat => cat.id === params.id)
-  );
+export default function QuestionPage({ params }) {
+  const lang = params?.lang || 'vi'
+  const dict = getTranslationsSync(lang)
+  const questionId = params?.id
 
-  if (!category) {
-    return (
-      <div className="max-w-4xl mx-auto py-12 px-4 text-center">
-        <h1 className="text-2xl font-bold text-gray-900">
-          Không tìm thấy danh mục
-        </h1>
-      </div>
-    );
+  // Tìm câu hỏi theo ID
+  const category = questionCategories.categories.find(cat => 
+    cat.questions.some(q => q.id === questionId)
+  )
+  const question = category?.questions.find(q => q.id === questionId)
+
+  if (!question) {
+    return <div>Question not found</div>
   }
 
   return (
-    <QuestionList
-      title={category.title}
-      description={category.description}
-      questions={category.questions}
-    />
-  );
+    <div className="py-8">
+      <h1 className="text-2xl font-bold mb-4">{question.title}</h1>
+      <p className="text-gray-600">{question.answer}</p>
+    </div>
+  )
 } 

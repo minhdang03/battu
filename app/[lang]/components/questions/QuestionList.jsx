@@ -1,62 +1,37 @@
 'use client';
 
-import { useState } from 'react';
+import Link from 'next/link';
 
-export default function QuestionList({ title, description, questions }) {
-  const [openIndex, setOpenIndex] = useState(null);
-
+export default function QuestionList({ title, description, questions, lang }) {
   return (
-    <div className="max-w-4xl mx-auto py-12 sm:py-16 px-4">
-      {/* Header */}
-      <div className="text-center mb-12">
-        <h1 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent mb-4">
-          {title}
-        </h1>
-        <p className="text-gray-600 max-w-2xl mx-auto">
-          {description}
-        </p>
-      </div>
+    <div className="py-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <h1 className="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-gradient">
+            {title}
+          </h1>
+          <div className="w-32 h-1.5 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mx-auto rounded-full mb-6"></div>
+          <p className="text-gray-600 text-xl">{description}</p>
+        </div>
 
-      {/* Questions */}
-      <div className="space-y-4">
-        {questions.map((question, index) => (
-          <div
-            key={index}
-            className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-200"
-          >
-            <button
-              onClick={() => setOpenIndex(openIndex === index ? null : index)}
-              className="w-full px-6 py-4 text-left flex justify-between items-center"
+        {/* Questions Grid */}
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {questions.map((question, index) => (
+            <Link 
+              key={question.id} 
+              href={`/${lang}/questions/${question.id}`}
+              className="group block p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-200"
             >
-              <span className="text-gray-900 font-medium pr-4">{question}</span>
-              <svg
-                className={`w-5 h-5 text-gray-500 transform transition-transform duration-200 
-                  ${openIndex === index ? 'rotate-180' : ''}`}
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round" 
-                  strokeWidth={2} 
-                  d="M19 9l-7 7-7-7" 
-                />
-              </svg>
-            </button>
-            
-            {openIndex === index && (
-              <div className="px-6 pb-4">
-                <div className="pt-4 border-t">
-                  <p className="text-gray-600">
-                    {/* Nội dung câu trả lời sẽ được thêm sau */}
-                    Đang cập nhật nội dung chi tiết...
-                  </p>
-                </div>
-              </div>
-            )}
-          </div>
-        ))}
+              <h3 className="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                {question.title}
+              </h3>
+              <p className="mt-2 text-gray-600 line-clamp-3">
+                {question.excerpt || question.answer}
+              </p>
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );
