@@ -1,6 +1,6 @@
 import { getTranslations } from '../../../../config/i18n'
 import questions from '../../data/questions'
-import QuestionList from '../../Questions/QuestionList'
+import QuestionList from '../../questions/QuestionList'
 
 export function generateStaticParams() {
   return questions.categories.map((category) => ({
